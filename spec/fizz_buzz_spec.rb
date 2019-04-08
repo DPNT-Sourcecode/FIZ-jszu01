@@ -4,7 +4,7 @@ describe 'Fizzbuzz' do
 
   it 'checks if integer is between 1 and 999' do
     fizzbuzz = FizzBuzz.new
-    expect(fizzbuzz.fizz_buzz(15)).to eq('fizz buzz')
+    expect(fizzbuzz.fizz_buzz(2)).to eq(2)
   end
 
   it 'returns fizz buzz for numbers divisible by 15' do
@@ -23,6 +23,7 @@ describe 'Fizzbuzz' do
   end
 
 end
+
 
 
 

@@ -2,19 +2,25 @@
 class FizzBuzz
 
   def fizz_buzz(number)
+    @return = ""
   if number.between?(1,999)
     if number % 15 == 0
-       'fizz buzz'
+       @return = 'fizz buzz'
      elsif number % 5 == 0
-       'buzz'
+       @return = 'buzz'
      elsif number % 3 == 0
-       'fizz'
+       @return = 'fizz'
     else
-      number
+      @return = number
     end
+  else
+    raise "not implemented"
+  end
+  @return
   end
 
 end
+
 
 
 
