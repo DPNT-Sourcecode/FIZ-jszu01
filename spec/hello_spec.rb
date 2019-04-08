@@ -8,6 +8,3 @@ describe 'Hello' do
   end
 
 end
-
-
-
