@@ -3,7 +3,7 @@ class FizzBuzz
 
   def fizz_buzz(number)
 
-  if number.between?(1,999)
+
     if number % 15 == 0
        return 'fizz buzz'
      elsif number % 5 == 0
@@ -13,10 +13,8 @@ class FizzBuzz
     else
       return number
     end
-  else
-    raise "not implemented"
-  end
-  
+
   end
 
 end
+
