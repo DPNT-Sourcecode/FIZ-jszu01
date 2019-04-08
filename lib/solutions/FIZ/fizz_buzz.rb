@@ -8,31 +8,31 @@ class FizzBuzz
     p num_array.uniq.length
     @result = []
 
-    if num_array.uniq.length == 1
+
     if (number % 5 == 0 || num_array.include?(5)) && (number % 3 == 0 || num_array.include?(3))
-      @return = 'fizz buzz'
-    elsif (number % 5 == 0 || num_array.include?(5)) && (number % 3 == 0 || num_array.include?(3)) && num_array.uniq.length != 1
-        @return = 'fizz buzz'
+      @result.push 'fizz buzz'
      elsif number % 5 == 0 || num_array.include?(5) && num_array.uniq.length != 1
-       @return = 'buzz'
-    elsif number % 5 == 0 || num_array.include?(5) && num_array.uniq.length == 1
-      @return = 'buzz deluxe'
+       @result.push 'buzz'
      elsif number % 3 == 0 || num_array.include?(3) && num_array.uniq.length != 1
-      @return = 'fizz'
-    elsif (number % 3 == 0 || num_array.include?(3)) && num_array.uniq.length == 1
-       @return = 'fizz deluxe'
-    elsif num_array.uniq.length == 1
-       @return = 'deluxe'
-     else
-        @return = number
-  end
+      @result.push 'fizz'
+    elsif num_array.length > 1 && num_array.uniq.length != 1
+      @result.push 'deluxe'
+    else
+      return number
+    end
+
+
+    if num_array.length > 1 && num_array.uniq.length == 1
+      @result.push 'deluxe'
+    end
+
+    result.uniq.join('')
+    end
 
 
 
   end
 
-
-end
 
 
 
