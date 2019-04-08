@@ -2,9 +2,9 @@ require './lib/solutions/FIZ/fizz_buzz.rb'
 
 describe 'Fizzbuzz' do
 
-  it 'checks if integer is between 1 and 999' do
+  it 'returns fizz for 13' do
     fizzbuzz = FizzBuzz.new
-    expect(fizzbuzz.fizz_buzz(2)).to eq(2)
+    expect(fizzbuzz.fizz_buzz(13)).to eq('fizz')
   end
 
   it 'returns fizz buzz for numbers divisible by 15' do
@@ -23,3 +23,4 @@ describe 'Fizzbuzz' do
   end
 
 end
+
