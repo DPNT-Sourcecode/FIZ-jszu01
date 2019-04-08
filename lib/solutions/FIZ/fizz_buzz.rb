@@ -16,7 +16,7 @@ class FizzBuzz
       @result = number
     end
 
-    if ((number % 3 == 0) && num_array.include?(3)) || ((number % 5 == 0) && num_array.include?(5)) && number % 2 == 0
+    if (number % 2 == 0) && (((number % 3 == 0) && num_array.include?(3)) || ((number % 5 == 0) && num_array.include?(5))) 
       @result = @result + " deluxe"
     elsif ((number % 3 == 0) && num_array.include?(3)) || ((number % 5 == 0) && num_array.include?(5)) && number % 2 != 0
       @result = @result + " fake deluxe"
@@ -29,6 +29,7 @@ class FizzBuzz
 
 
   end
+
 
 
 

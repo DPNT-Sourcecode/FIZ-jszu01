@@ -9,17 +9,17 @@ describe 'Fizzbuzz' do
 
   it 'returns fizz buzz for numbers divisible by 15' do
     fizzbuzz = FizzBuzz.new
-    expect(fizzbuzz.fizz_buzz(15)).to eq('fizz buzz')
+    expect(fizzbuzz.fizz_buzz(15)).to eq('fizz buzz fake deluxe')
   end
 
   it 'returns buzz for numbers divisible by 5' do
     fizzbuzz = FizzBuzz.new
-    expect(fizzbuzz.fizz_buzz(5)).to eq('buzz')
+    expect(fizzbuzz.fizz_buzz(5)).to eq('buzz fake deluxe')
   end
 
   it 'returns fizz for numbers divisible by 3' do
     fizzbuzz = FizzBuzz.new
-    expect(fizzbuzz.fizz_buzz(3)).to eq('fizz')
+    expect(fizzbuzz.fizz_buzz(3)).to eq('fizz fake deluxe')
   end
 
   it 'returns deluxe for numbers greater than 10 with identical digits' do
@@ -58,5 +58,6 @@ describe 'Fizzbuzz' do
   end
 
 end
+
 
 
