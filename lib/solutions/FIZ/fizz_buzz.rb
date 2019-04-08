@@ -8,14 +8,16 @@ class FizzBuzz
     if (number % 5 == 0 || num_array.include?(5)) && (number % 3 == 0 || num_array.include?(3)) && num_array.uniq.length != 1
       @return = 'fizz buzz'
     elsif (number % 5 == 0 || num_array.include?(5)) && (number % 3 == 0 || num_array.include?(3)) && num_array.uniq.length == 1
+      @return = 'fizz buzz deluxe'
      elsif number % 5 == 0 || num_array.include?(5) && num_array.uniq.length != 1
-       @return = 'fizz buzz'
        @return = 'buzz'
+    elsif number % 5 == 0 || num_array.include?(5) && num_array.uniq.length == 1
+      @return = 'buzz deluxe'
      elsif number % 3 == 0 || num_array.include?(3) && num_array.uniq.length != 1
-       @return = 'fizz buzz'
       @return = 'fizz'
+    elsif number % 3 == 0 || num_array.include?(3) && num_array.uniq.length == 1
+       @return = 'fizz deluxe'
     elsif num_array.uniq.length == 1
-
        @return = 'deluxe'
      else
         @return = number
@@ -27,6 +29,7 @@ class FizzBuzz
 
 
 end
+
 
 
 

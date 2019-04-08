@@ -31,4 +31,11 @@ describe 'Fizzbuzz' do
     fizzbuzz = FizzBuzz.new
     expect(fizzbuzz.fizz_buzz(12)).to eq('fizz')
   end
+
+  it 'returns deluxe for numbers greater than 10 with identical digits' do
+    fizzbuzz = FizzBuzz.new
+    expect(fizzbuzz.fizz_buzz(77)).to eq('deluxe')
+  end
+
 end
+
