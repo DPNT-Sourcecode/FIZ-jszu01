@@ -18,9 +18,11 @@ end
        return 'fizz'
      elsif number > 10 && deluxe(number)?
        return 'deluxe'
+     else 
     end
 
   end
 end
+
 
 
