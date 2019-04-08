@@ -2,8 +2,8 @@
 class FizzBuzz
 
   def fizz_buzz(number)
-    number.each_char.map {|c| c.to_i}
-    p number
+    if number.include? 3
+    end 
     if number % 15 == 0
        return 'fizz buzz'
      elsif number % 5 == 0
@@ -17,5 +17,6 @@ class FizzBuzz
   end
 
 end
+
 
 
