@@ -2,7 +2,7 @@
 class FizzBuzz
 
   def fizz_buzz(number)
-    @return = ""
+
   if number.between?(1,999)
     if number % 15 == 0
        @return = 'fizz buzz'
@@ -20,6 +20,7 @@ class FizzBuzz
   end
 
 end
+
 
 
 
