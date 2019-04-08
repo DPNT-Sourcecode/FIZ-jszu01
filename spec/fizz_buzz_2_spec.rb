@@ -7,4 +7,3 @@ describe 'fizzbuzz variation' do
   end
 
 end
-

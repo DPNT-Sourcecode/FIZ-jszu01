@@ -2,13 +2,13 @@
 class FizzBuzz
 
   def fizz_buzz(number)
-    if number.include? 3
-    end 
+    num_array = number.to_s.chars.map(&:to_i)
+
     if number % 15 == 0
        return 'fizz buzz'
-     elsif number % 5 == 0
+     elsif number % 5 == 0 || num_array.include?(5)
        return 'buzz'
-     elsif number % 3 == 0
+     elsif number % 3 == 0 || num_array.include?(3)
        return 'fizz'
     else
       return number
@@ -17,6 +17,3 @@ class FizzBuzz
   end
 
 end
-
-
-
