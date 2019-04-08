@@ -8,4 +8,3 @@ describe 'Sum' do
   end
 
 end
-
