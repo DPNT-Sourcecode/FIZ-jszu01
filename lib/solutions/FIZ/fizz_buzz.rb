@@ -3,7 +3,7 @@ class FizzBuzz
 
   def fizz_buzz(number)
     num_array = number.to_s.chars.map(&:to_i)
-    
+    num_array.length.times do || 
 
     if (number % 5 == 0 || num_array.include?(5)) && (number % 3 == 0 || num_array.include?(3))
        return 'fizz buzz'
@@ -18,5 +18,3 @@ class FizzBuzz
   end
 
 end
-
-
