@@ -4,29 +4,30 @@ class FizzBuzz
 
   def fizz_buzz(number)
     num_array = number.to_s.chars.map(&:to_i)
-    @result = []
+    @result = ""
 
 
     if (number % 5 == 0 || num_array.include?(5)) && (number % 3 == 0 || num_array.include?(3))
-      @result.push 'fizz buzz'
+      @result = 'fizz buzz'
      elsif number % 5 == 0 || num_array.include?(5) && num_array.uniq.length != 1
-       @result.push 'buzz'
+       @result = 'buzz'
      elsif number % 3 == 0 || num_array.include?(3) && num_array.uniq.length != 1
-      @result.push 'fizz'
-    elsif num_array.length > 1 && num_array.uniq.length == 1
-      @result.push 'deluxe'
+      @result =  'fizz'
+    # elsif num_array.length > 1 && num_array.uniq.length == 1
+    #   @result = 'deluxe'
     else
-      return number
+      @result = number
     end
 
 
     if num_array.length > 1 && num_array.uniq.length == 1
-      @result.push 'deluxe'
+      @result += ' deluxe'
     end
 
-    @result.uniq.join(' ')
+    return @result
     end
 
 
 
   end
+
