@@ -23,7 +23,3 @@ describe 'Fizzbuzz' do
   end
 
 end
-
-
-
-
