@@ -2,13 +2,14 @@
 class Sum
 
   def sum(x, y)
-    int  = x + y
-    if int.integer? == true
-      int
+    @return  = x + y
+    if @return.integer? == true
+      @return
     else
     raise 'Not implemented'
-  end 
+  end
   end
 
 end
+
 
