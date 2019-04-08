@@ -13,15 +13,15 @@ class FizzBuzz
        @result = 'buzz'
      elsif number % 3 == 0 || num_array.include?(3) && num_array.uniq.length != 1
       @result =  'fizz'
-    # elsif num_array.length > 1 && num_array.uniq.length == 1
-    #   @result = 'deluxe'
+    elsif num_array.length > 1 && num_array.uniq.length == 1
+      @result = 'deluxe'
     else
       @result = number
     end
 
 
     if num_array.length > 1 && num_array.uniq.length == 1
-      @result += ' deluxe'
+      @result = @result + " deluxe"
     end
 
     return @result
@@ -30,4 +30,3 @@ class FizzBuzz
 
 
   end
-
