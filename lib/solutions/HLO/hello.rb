@@ -2,14 +2,14 @@
 class Hello
 
   def hello(friend_name)
-      @return = ""
-    if friend_name.string? == true
-      @return = 'hello' + friend_name
-    else
-      raise 'Not implemented'
-    end
-  @return
+
+
+      @return = "hello " + "#{friend_name}"
+    # else
+    #   raise 'Not implemented'
+
   end
 
 end
+
 
