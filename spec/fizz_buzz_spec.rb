@@ -32,6 +32,3 @@ describe 'Fizzbuzz' do
     expect(fizzbuzz.fizz_buzz(12)).to eq('fizz')
   end
 end
-
-
-
